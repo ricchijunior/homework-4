@@ -1,7 +1,4 @@
- /* font-family: "Raleway",
- sans-serif;
-  font-family: "Roboto",
-  sans-serif; */
+
 
   body {
     font-family: "Roboto",
@@ -157,11 +154,13 @@
   .section-first {
     background: #2e2f42; 
     padding: 188px 0;
-    background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../image/people-office.jpg);
+    background-image: linear-gradient(rgba(46,47,66,0.7),rgba(46,47,66,0.7)),url(../image/people-office.jpg);
     max-width: 1440px;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
+    margin-left: auto;
+    margin-right: auto;
   }
 
   
@@ -229,6 +228,18 @@
   padding: 120px 0;  
 }
 
+.icons-section-two {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 112px;
+  background-color: #f4f4fd;
+  border-radius: 4px;
+  border: 1px solid #8e8f99;
+  margin-bottom: 8px;
+  
+}
+
  .visually-hidden {
   position: absolute;
   width: 1px;
@@ -249,9 +260,12 @@
 }
 
 .first-list {
-  width: calc((100%-72px)/4);
+  width: calc((100% - 72px) / 4);
   
 }
+
+
+/* section 3 */
 
 .page-team {
   background: #f4f4fd;
@@ -275,12 +289,47 @@
 
 .team-list {
   background: #ffffff;
-  width: calc((100% - 72px) /4);
+  width: calc((100% - 72px) / 4);
   border-radius: 0px 0px 4px 4px;
+  box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
+    0px 1px 1px rgba(46, 47, 66, 0.16),
+    0px 2px 1px rgba(46, 47, 66, 0.08);
 }
 
 .container-name {
   padding: 32px 0;
+}
+
+.social-icons {
+  display: flex;
+  justify-content: center;
+  gap: 24px;
+  margin-top: 8px;
+}
+
+
+.social-app {
+  width: 40px;
+  height: 40px;
+}
+
+.link-app {
+  width: 100%;
+  height: 100%;
+  background-color: #4d5ae5;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;  
+}
+
+.link-app:hover,
+.link-app:focus {
+  background-color: #404bbf;
+}
+
+.app {
+  fill: #f4f4fd
 }
 
 .portfolio {
