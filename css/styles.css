@@ -311,6 +311,7 @@
 .social-app {
   width: 40px;
   height: 40px;
+  
 }
 
 .link-app {
@@ -321,7 +322,9 @@
   display: flex;
   align-items: center;
   justify-content: center;  
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
+
 
 .link-app:hover,
 .link-app:focus {
@@ -332,9 +335,12 @@
   fill: #f4f4fd
 }
 
+/* section 4 */
+
 .portfolio {
   padding: 120px 0 120px 0;
 }
+
 
 .list-portfolio {
   display: flex;
@@ -345,6 +351,38 @@
 
 .portfolio-img {
   width: calc((100% - 48) /3);
+  transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.portfolio-img:hover .overlay-text {
+  transform: translateY(0%);
+  
+}
+
+.portfolio-img:hover {box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
+0px 1px 1px rgba(46, 47, 66, 0.16),
+0px 2px 1px rgba(46, 47, 66, 0.08);
+}
+
+.container-card {
+  position: relative;
+  overflow: hidden;
+  
+}
+
+.overlay-text {
+  position: absolute;
+  top: 0;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  color: #f4f4fd;
+  padding: 40px 32px;
+  background-color: #4d5ae5;
+  height: 100%;
+  width: 100%;
+  transform: translateY(100%);
+  transition: transform 250ms cubic-bezier(0.4,0,0.2,1);
 }
 
 .container-ourteam {
@@ -369,4 +407,56 @@ border-top: none;
 .footer-page .text-inside {
   color: #f4f4fd;
   max-width: 264px;
+}
+
+.container-footer {
+  display: flex;
+  align-items: baseline;  
+}
+
+.footer-media {
+  margin-right: 120px;
+}
+
+.footer-list {
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  color: #ffffff;
+  margin-bottom: 16px;
+}
+
+.social-list {
+  display: flex;
+  gap: 16px; 
+}
+
+.media-icons {
+  width: 40px;
+  height: 40px;
+
+}
+
+.icons-link {
+  width: 100%;
+  height: 100%;
+  background-color: #4d5ae5;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+ .icons-link:hover,
+ .icons-link:focus {
+  background-color: #31d0aa;
+}
+
+.icons-soc {
+  fill: #f4f4fd;
+}
+ 
+.media-icons {
+  
 }
